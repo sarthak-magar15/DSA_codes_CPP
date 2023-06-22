@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    /*
     int num = 5; 
     
     cout << num << endl;
@@ -22,6 +23,23 @@ int main()
     cout << "size of the integer is : " << sizeof(num) << endl;
     cout << "Size of the pointer is : " << sizeof(p2) << endl;
     cout << "Size of the pointer is : " << sizeof(ptr) << endl; 
+    */
+
+   int num = 5;
+   int a = num; 
+   cout << "Before " << a << endl;
+   a++; 
+   cout << "After" << a << endl;
+
+   int *p = &num; 
+   cout << "Before" << *p << endl; 
+   (*p)++; 
+   cout << "After" << *p << endl;
+
+   //copying pointer 
+   int *q = p;
+   cout << p << " - " << num << endl;
+   cout << *p << " - " << *q << endl;
 
     return 0;
 }

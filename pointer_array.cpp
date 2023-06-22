@@ -27,8 +27,8 @@ int main()
     cout << ptr << endl;
     cout << temp << endl;
     cout << sizeof(ptr) << endl;
-
     cout << sizeof(&ptr) << endl;
+    
 
 
     return 0; 
