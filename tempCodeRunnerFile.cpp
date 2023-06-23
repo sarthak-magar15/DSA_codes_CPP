@@ -1,39 +1,60 @@
 #include<iostream>
-using namespace std;
+using namespace std; 
 
-class Y;
+/*
 
-class X{
-    int data;
-    public:
-        void setvalue(int value){
-            data = value;
+int main(){
+
+    
+    // we need to print 
+    // ****
+    // ****
+    // ****
+    // ****
+    
+
+   int n; 
+   cin >> n; 
+
+   int row = 1; 
+   
+   while(row <= n){
+        int col = 1; 
+
+        while (col <= n)
+        {
+            cout << "*"; 
+            col = col +1; 
         }
-    friend void add(X, Y );
-};
+        cout << endl; 
+        row = row +1;
+        
+   }
 
-class Y{
-  int num;
-  public:
-    void setvalue(int value){
-        num = value;
-    }  
-    friend void add(X, Y );
-};
-
-void add(X o1 , Y o2){
-    cout<<"summing data of x and y gives me " << o1.data + o2.num << endl;
 }
+*/
 
-int mian()
-{
-    X a1;
-    a1.setvalue(3);
+int main(){
 
-    Y b1;
-    b1.setvalue(5);
+    int n; 
+    cin >> n; 
 
-    add(a1, b1);
+    int row = 1; 
 
-    return 0;
+    while(row <= n){
+        int col = 1; 
+
+        while(col <=n){
+            if(row == 0 || row == n-1 || col == 0 || col == n-1)
+            {
+                cout << '*'; 
+            }
+            else 
+            {
+                cout << " "; 
+            }
+            cout << endl; 
+        }
+    }
+    
 }
